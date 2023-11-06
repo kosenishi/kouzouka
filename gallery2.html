@@ -1,0 +1,32 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>他の人の因果ループ図</title>
+</head>
+<body>
+    <header>
+        <h1>他の人の因果ループ図</h1>
+    </header>
+
+    <div class="gallery">
+        <!-- 画像1 -->
+        <div class="image-container">
+            <img src="images/kouzou3.jpg" alt="たろうの作品" />
+            <p>たろう作</p>
+            <button class="like-button" onclick="likeFunction(this)">いいね</button> <span class="like-count">0</span>
+            <div class="comment-section">
+                <input type="text" placeholder="コメント..." />
+                <button onclick="addComment(this)">投稿</button>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2023 構造化思考トレーニング</p>
+    </footer>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

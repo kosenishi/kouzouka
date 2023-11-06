@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>演習1: なぜ、テストの点が取れなくなった？ | 構造化思考トレーニング</title>
+</head>
+<body>
+    <header>
+        <h1>演習1: なぜ、テストの点が取れなくなった？</h1>
+    </header>
+    <main>
+        <section>
+            <p>中学生のA君は勉強が嫌いであり、授業中もノートを取ることをしません。そのため、テストごとに点数も下がってきて、その度に親に怒られてしまうのでした。</p>
+            <p>どうしたものかと考えたA君はテストで悪い点を取らないために、友人から授業のノートを借りることにしました。すると、テストの点が前よりも良くなり、親にもあまり怒られなくなりました。A君は次のテストでも同じように友人にテスト直前にノートを借りました。</p>
+            <p>ところが、徐々にまたテストの点数が取れなくってきてしまいました。</p>
+        </section>
+        <div class="buttons">
+            <button onclick="location.href='upload.html'">因果ループ図のアップロード</button>
+            <button onclick="location.href='gallery.html'">他の人の因果ループ図</button>
+            <button id="openModal">構造化思考の手順</button>
+        </div> 
+    </main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>構造化思考の手順</h2>
+                <ol>
+                    <li>問いの設定</li>
+                    <li>パターングラフの作成</li>
+                    <li>主な関係者の列挙</li>
+                    <li>関心者の関心事例の確認</li>
+                    <li>変数の抽象度の確認</li>
+                    <li>変数同士を論理的に繋いでいく</li>
+                    <li>中間変数について検討する</li>
+                    <li>因果ループ図を実現する</li>
+                </ol>
+            </div>
+        </div>
+    <footer>
+        <p>&copy; 2023 構造化思考トレーニング</p>
+    </footer>
+    <script src="js/modaru.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>学習記録</title>
+</head>
+<!-- 省略 -->
+<body>
+    <header>
+        <h1>学習記録</h1>
+    </header>
+
+    <div id="studyChartContainer">
+        <canvas id="studyChart"></canvas>
+    </div>
+
+    <!-- ユーザー入力フォーム -->
+    <div id="inputContainer">
+        <form id="studyDataForm">
+            <label for="study-date">学習日:</label>
+            <input type="date" id="study-date" name="study-date" required>
+
+            <label for="study-time">学習時間 (分):</label>
+            <input type="number" id="study-time" name="study-time" required>
+
+            <input type="submit" value="追加">
+        </form>
+    </div>
+
+    <div id="loopButtonContainer">
+        <!-- ここでonclick属性を追加しました -->
+        <button id="myLoopButton" onclick="window.location.href='myloop.html'">自身の因果ループ図</button>
+    </div>
+
+    <div id="feedbackContainer">
+        <p id="studyFeedback"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 構造化思考トレーニング</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+</body>
+<!-- 省略 -->
+
+</html>
+
+</html>
+
+
+

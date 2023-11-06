@@ -1,0 +1,355 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #FFC0CB; /* ピンク色 */
+    color: white;
+    text-align: center;
+    padding: 0.3em;
+    border-bottom: 3px solid #FF69B4; /* ホットピンク */
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+button {
+    background-color: #FF69B4; /* ホットピンク */
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFB6C1; /* ライトピンク */
+}
+
+footer {
+    background-color: #FFC0CB; /* ピンク色 */
+    color: white;
+    text-align: center;
+    padding: 0.5em; /* この値を半分に調整 */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #FF69B4; /* ホットピンク */
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+li a {
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #dde;
+}
+
+
+section p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* 上方向のマージンを増やしてボタンを下に移動 */
+}
+
+button {
+    background-color: #4CAF50; /* グリーン */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px; /* ボタン間のスペースを増やす */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+/* モーダルの基本スタイル */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  }
+  
+  /* モーダルのメインコンテンツ */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* クローズボタン */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }  
+
+.gallery {
+    padding: 20px;
+    margin-bottom: 100px;
+
+}
+
+.image-container {
+    margin-bottom: 20px;
+    width: 30%; /* この行を追加: 画像コンテナの幅を30%に設定 */
+    margin-right: auto; /* この行を追加: 右の余白を自動に */
+    margin-left: auto; /* この行を追加: 左の余白を自動に */
+}
+
+.image-container img {
+    width: 100%; /* 画像自体の幅はコンテナに合わせて100%に */
+    height: auto; /* 画像の高さは自動にしてアスペクト比を維持 */
+    display: block; /* この行を追加: 画像が自身の行に表示されるように */
+    margin: 0 auto; /* この行を追加: 画像をコンテナの中央に */
+}
+
+
+.like-button {
+    background-color: #008CBA; /* 青色 */
+    color: white;
+    padding: 5px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.like-button:hover {
+    background-color: #005f75; /* 濃い青色 */
+}
+
+.comment-section input[type="text"] {
+    width: 80%;
+    padding: 6px;
+}
+
+.comment-section button {
+    padding: 6px;
+}
+
+
+#studyChartContainer {
+    width: 60%; /* グラフの幅を調整 */
+    max-width: 800px; /* 最大幅も設定できます */
+}
+
+#studyChart {
+    display: block; /* キャンバス要素のデフォルトの描画モードを変更 */
+    width: 100% !important;
+    height: auto !important;
+}
+
+#inputContainer {
+    margin: 20px 0;
+}
+
+#studyDataForm {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#studyDataForm input[type="submit"] {
+    cursor: pointer;
+}
+
+#loopButtonContainer {
+    position: relative; /* 相対位置に設定 */
+    text-align: right; /* ボタンをコンテナの右側に配置 */
+    margin-bottom: 20px; /* 下のマージンは適宜調整してください */
+    right: 80px; /* 右に20ピクセル移動する（左に来るようにする）。値は調整が必要 */
+    top: -150px; /* 上に20ピクセル移動する。値は調整が必要 */
+}
+
+#myLoopButton {
+    padding: 10px 20px; /* ボタンのパディングを適切に調整 */
+    background-color: #4CAF50; /* 例: 緑色の背景 */
+    color: white; /* テキストは白色 */
+    border: none; /* 境界線なし */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* フォントサイズ調整 */
+    border-radius: 5px; /* 角を少し丸く */
+    cursor: pointer; /* カーソルを指マークに */
+}
+
+#myLoopButton:hover {
+    background-color: #45a049; /* ホバー時の背景色を少し暗く */
+}
+
+
+.loop-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.loop-container h2 {
+    margin-top: 20px;
+}
+
+.loop-container img {
+    width: 60%; /* 画像の大きさ調整。適宜変更可能 */
+    display: block;
+    margin-right: 20px;
+    float: left;
+}
+
+.info {
+    padding-left: 65%; /* 画像の幅に合わせる */
+    position: relative;
+}
+
+.comments-list {
+    display: none;
+    list-style: none;
+}
+
+.comment-btn {
+    display: block;
+    margin-top: 10px;
+}
+
+.image-section {
+    margin-bottom: 50px; /* ここで画像間の距離を調整します。必要に応じて値を変更してください。 */
+    overflow: hidden; /* floatの影響をリセット */
+}
+
+.other-loops-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* または任意の色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0; /* 必要に応じて調整 */
+}
+
+.other-loops-button:hover {
+    background-color: #45a049; /* ホバー時の色、任意 */
+}
+
+.comment-btn {
+    padding: 10px 20px; /* パディング調整 */
+    background-color: #ff9800; /* オレンジ色の背景 */
+    color: white; /* テキストは白 */
+    border: none; /* 境界線を削除 */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* フォントサイズを調整 */
+    border-radius: 5px; /* 角を丸く */
+    cursor: pointer; /* カーソルを指の形に */
+}
+
+.comment-btn:hover {
+    background-color: #e68a00; /* ホバー時は背景色を少し暗く */
+}
+
+/* style.css */
+
+#feedbackContainer {
+    margin-top: 20px; /* 上部のスペース */
+    text-align: center; /* テキストを中央寄せ */
+    font-size: larger; /* やや大きめのフォントサイズ */
+    color: #333; /* 文字色 */
+    /* 必要に応じて、その他のスタイリングプロパティを追加 */
+}
+
+.training-flow h2 {
+    color: #000; /* 黒文字 */
+    font-size: 1.5em; /* タイトルのサイズをやや大きく */
+    margin-bottom: 10px; /* タイトル下のスペース */
+    text-align: center; /* タイトルを中央に配置 */
+}
+
+.training-flow ol {
+    width: 70%; /* または希望する割合または固定幅 */
+    margin: 0 auto; /* 上下は0、左右は自動で中央揃え */
+    padding-left: 500px; /* リストの左のスペースを確保し、数字が縦に揃うように調整 */
+    list-style: decimal; /* 標準の数字スタイルを適用 */
+    counter-reset: item; /* カウンターをリセット */
+    background: none; /* 背景を透明に設定 */
+    border: none; /* 枠線を削除 */
+}
+
+.training-flow ol li {
+    font-size: 1em; /* テキストのサイズ */
+    color: #000; /* 黒文字 */
+    margin-bottom: 5px; /* リスト項目間のスペース */
+    text-align: left; /* テキストを左揃え */
+    background: none; /* 項目の背景を透明に設定 */
+    border: none; /* 枠線を削除 */
+}
+
+

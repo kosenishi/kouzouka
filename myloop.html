@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>自身の因果ループ図</title>
+</head>
+<body>
+    <header>
+        <h1>自身の因果ループ図</h1>
+    </header>
+
+    <div class="loop-container">
+        <div class="image-section">
+        <h2>演習1: なぜ、テストの点が取れなくなった？</h2>
+        <img src="images/kouzou2.jpg" alt="kouzou2">
+        <div class="info">
+            <p>いいね数: 6</p>
+            <button class="comment-btn" onclick="showComments('comments1')">コメントを見る</button>
+            <ul id="comments1" class="comments-list">
+                <li>テストの点数から友達からの信頼は少し飛躍しているような、、</li>
+                <li>「友人への依存心」と表現するとうまくループが回りそう</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="other-loops-top">
+            <a href="gallery.html" class="other-loops-button">他の人の因果ループ図</a>
+        </div>
+
+        <div class="image-section">
+        <h2>演習2: なぜ、あの人ばかりに接客が任されるのか？</h2>
+        <img src="images/kouzou3.jpg" alt="kouzou3">
+        <div class="info">
+            <p>いいね数: 11</p>
+            <button class="comment-btn" onclick="showComments('comments2')">コメントを見る</button>
+            <ul id="comments2" class="comments-list">
+                <li>とてもわかりやすいと思う</li>
+                <li>エスカレーションの型にはまっていますね</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="other-loops-bottom">
+            <a href="gallery2.html" class="other-loops-button">他の人の因果ループ図</a>
+        </div>
+    </div>
+
+    <script src="js/comments.js"></script>
+</body>
+</html>
